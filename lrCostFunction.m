@@ -45,7 +45,7 @@ grad = zeros(size(theta));
    
    grad = (1/m)*((X')*(h-y)) + (lambda/m)*theta;
    
-  % grad(1) = grad(1) - (lambda/m)*theta(1) ;  % making theta0 unaffected by
+   grad(1) = grad(1) - (lambda/m)*theta(1) ;  % making theta0 unaffected by
    
  % regression term 
  % indexing in octave and matlab starts from 1 not 0
